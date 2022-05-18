@@ -17,7 +17,7 @@ class CreateChildSystemsTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('image');
-            $table->string('description')->nullable();
+            $table->text('description')->nullable();
             $table->json('table')->nullable();
             $table->unsignedBigInteger('parent_id');
             $table->foreign('parent_id')->references('id')->on('parent_systems');;
