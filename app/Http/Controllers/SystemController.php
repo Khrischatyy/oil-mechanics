@@ -15,14 +15,18 @@ class SystemController extends Controller
         return view('contents.main', ['systems' => $systems]);
     }
 
-    public function childs()
+    public function childs(int $id)
     {
-        $systems = ChildSystem::select('id', 'name', 'image')->get();
+        $systems = ChildSystem::where('parent_id', $id)->get();
+
+        if(empty($systems)) {
+            return $this->system($id);
+        }
 
         return view('contents.childs', ['systems' => $systems]);
     }
 
-    public function system()
+    public function system($id)
     {
         $systems = ParentSystem::select('id', 'name', 'image')->get();
 

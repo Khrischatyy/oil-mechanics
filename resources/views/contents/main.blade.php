@@ -1,34 +1,23 @@
 @extends('layout')
 
 @section('content')
+
 <div class="systems">
     <h2>
         Системы защиты погружного оборудования и кабельных линий в скважине
     </h2>
     <div class="row d-flex justify-content-center">
-        <div class="card col-md-4" style="width: 18rem;">
-            <img class="card-img-top" src="{{ asset('images/detail.png') }}" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Протектор кабеля</h5>
-                <a href="#" class="btn btn-primary">Подробнее</a>
-            </div>
-        </div>
-        <div class="card col-md-4" style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-        <div class="card col-md-4" style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
+        @foreach($systems as $system)
+            <a href="{{route('childs', ['id' => $system->id])}}">
+                <div class="card col-md-4 bg-dark m-5" style="width: 18rem;">
+                    <img class="card-img-top" src="{{ asset($system->image) }}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title text-white">{{ $system->name }}</h5>
+                        <a href="#" class="btn btn-primary">Подробнее</a>
+                    </div>
+                </div>
+            </a>
+        @endforeach
     </div>
 </div>
 
