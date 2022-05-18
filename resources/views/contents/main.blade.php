@@ -1,6 +1,21 @@
 @extends('layout')
 
 @section('content')
+    <div class="main">
+        <div class="about"></div>
+        <h1>
+            Ойл Механик
+        </h1>
+        <div class="">
+            Является ведущим поставщиком систем защиты погружного
+            оборудования в скважине на территории России и СНГ.
+            Основная задача нашего оборудования защищать кабельные
+            линии и погружные установки от механических повреждений в
+            скважине, а также в процессе СПО и эксплуатации. Первый патент
+            на протектор кабеля был получен в 2000 году.
+        </div>
+        <img class="fon img-fluid" src="{{ asset('images/fon.png') }}" alt="">
+    </div>
 <div class="companies row justify-content-center m-4">
     <img class="company" src="{{ asset('images/companies/rosneft.png') }}" alt="">
     <img class="company" src="{{ asset('images/companies/rosneft.png') }}" alt="">
