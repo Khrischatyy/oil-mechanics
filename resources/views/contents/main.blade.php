@@ -2,31 +2,34 @@
 
 @section('content')
     <div class="main">
-        <div class="about"></div>
-        <h1>
-            Ойл Механик
-        </h1>
-        <div class="">
-            Является ведущим поставщиком систем защиты погружного
-            оборудования в скважине на территории России и СНГ.
-            Основная задача нашего оборудования защищать кабельные
-            линии и погружные установки от механических повреждений в
-            скважине, а также в процессе СПО и эксплуатации. Первый патент
-            на протектор кабеля был получен в 2000 году.
+        <div class="about">
+            <h1>
+                Ойл Механик
+            </h1>
+            <div class="">
+                Является ведущим поставщиком систем защиты погружного
+                оборудования в скважине на территории России и СНГ.
+                Основная задача нашего оборудования защищать кабельные
+                линии и погружные установки от механических повреждений в
+                скважине, а также в процессе СПО и эксплуатации. Первый патент
+                на протектор кабеля был получен в 2000 году.
+            </div>
         </div>
-        <img class="fon img-fluid" src="{{ asset('images/fon.png') }}" alt="">
+        <div class="">
+            <img class="fon img-fluid" src="{{ asset('images/fon.png') }}" alt="">
+        </div>
     </div>
 <div class="companies row justify-content-center m-4">
     <img class="company" src="{{ asset('images/companies/rosneft.png') }}" alt="">
-    <img class="company" src="{{ asset('images/companies/rosneft.png') }}" alt="">
-    <img class="company" src="{{ asset('images/companies/rosneft.png') }}" alt="">
-    <img class="company" src="{{ asset('images/companies/rosneft.png') }}" alt="">
-    <img class="company" src="{{ asset('images/companies/rosneft.png') }}" alt="">
-    <img class="company" src="{{ asset('images/companies/rosneft.png') }}" alt="">
-    <img class="company" src="{{ asset('images/companies/rosneft.png') }}" alt="">
+    <img class="company" src="{{ asset('images/companies/gazprom.png') }}" alt="">
+    <img class="company" src="{{ asset('images/companies/shell.png') }}" alt="">
+    <img class="company" src="{{ asset('images/companies/lukoil.png') }}" alt="">
+    <img class="company" src="{{ asset('images/companies/surneftgaz.png') }}" alt="">
+    <img class="company" src="{{ asset('images/companies/schlumberger.png') }}" alt="">
+    <img class="company" src="{{ asset('images/companies/baker.png') }}" alt="">
 </div>
 
-<div class="systems">
+<div id="systems" class="systems">
     <h2>
         Системы защиты погружного оборудования и кабельных линий в скважине
     </h2>
@@ -43,7 +46,7 @@
     </div>
 </div>
 
-<div class="principles">
+<div id="principles" class="principles">
    <h2>
        Принципы нашей работы
    </h2>

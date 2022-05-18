@@ -10,10 +10,12 @@
 </head>
 <body>
     @include('header')
-    <div class="container">
+    <div class="container content">
         @yield('content')
     </div>
-    @include('footer')
+    <div>
+        @include('footer')
+    </div>
 
 <script src="{{ asset('js/app.js') }}"></script>
 </body>
