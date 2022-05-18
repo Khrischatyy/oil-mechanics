@@ -13,4 +13,8 @@ class ParentSystem extends Model
     public function childs(){
     	return $this->hasMany(ChildSystem::class, 'parent_id');
     }
+    
+    public function getTableAttribute($data){
+        return json_decode($data);
+    }
 }

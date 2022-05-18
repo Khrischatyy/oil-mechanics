@@ -9,4 +9,13 @@ class ChildSystem extends Model
 {
     use HasFactory;
     public $timestamps = false;
+    
+    public function parent(){
+    	return $this->belongsTo(ParentSystem::class, 'parent_id');
+    }
+    
+    public function getTableAttribute($data){
+        return json_decode(json_decode($data, true));
+    }
+    
 }
