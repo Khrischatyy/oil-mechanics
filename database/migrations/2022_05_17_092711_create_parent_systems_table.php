@@ -19,7 +19,6 @@ class CreateParentSystemsTable extends Migration
             $table->string('image');
             $table->text('description')->nullable();
             $table->json('table')->nullable();
-            $table->tinyInteger('is_parent');
         });
     }
 

@@ -54,7 +54,6 @@ class SystemController extends Controller
             $system->image = $request->image;
             $system->description = $request->description;
             $system->table = json_encode($request->table);
-            $system->is_parent = 0;
             $system->save();
         }
 

@@ -1,8 +1,14 @@
 @extends('layout')
 
 @section('content')
-<div class="companies row">
-    <img src="{{ asset('images/companies/rosneft.png') }}" alt="">
+<div class="companies row justify-content-center m-4">
+    <img class="company" src="{{ asset('images/companies/rosneft.png') }}" alt="">
+    <img class="company" src="{{ asset('images/companies/rosneft.png') }}" alt="">
+    <img class="company" src="{{ asset('images/companies/rosneft.png') }}" alt="">
+    <img class="company" src="{{ asset('images/companies/rosneft.png') }}" alt="">
+    <img class="company" src="{{ asset('images/companies/rosneft.png') }}" alt="">
+    <img class="company" src="{{ asset('images/companies/rosneft.png') }}" alt="">
+    <img class="company" src="{{ asset('images/companies/rosneft.png') }}" alt="">
 </div>
 
 <div class="systems">
