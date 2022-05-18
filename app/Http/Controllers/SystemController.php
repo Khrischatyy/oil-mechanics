@@ -17,20 +17,23 @@ class SystemController extends Controller
 
     public function childs(int $id)
     {
-        $systems = ChildSystem::where('parent_id', $id)->get();
+        $system = ParentSystem::with('childs')->where('id', $id)->first();
 
-        if(empty($systems)) {
-            return $this->system($id);
-        }
+        return view('contents.childs', ['system' => $system]);
+    }
+    
+    public function childSystem($id, $child_id)
+    {
+        $system = ChildSystem::with('parent')->where('id', $child_id)->first();
 
-        return view('contents.childs', ['systems' => $systems]);
+        return view('contents.system', ['system' => $system]);
     }
 
     public function system($id)
     {
-        $systems = ParentSystem::select('id', 'name')->get();
+        $system = ParentSystem::where('id', $id)->first();
 
-        return view('contents.system', ['systems' => $systems]);
+        return view('contents.system', ['system' => $system]);
     }
 
     public function addProductPage(){
