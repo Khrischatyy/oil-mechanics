@@ -2,13 +2,13 @@
 
 @section('content')
 <div class="systems">
-		<div class="breadcrumbs">Продукция @if($system->parent)- {{ $system->parent->name}}@endif</div>
+		<div class="breadcrumbs mt-5 mb-5">Продукция @if($system->parent)- {{ $system->parent->name}}@endif</div>
     <h2>
         {{$system->name}}
     </h2>
     <div class="row d-flex justify-content-center">
-        <div class="childs col-md-6">
-        	{{$system->description}}
+        <div class="system_description col-md-6 mt-2">
+        	<p>{{$system->description}}</p>
         </div>
         <div class="col-md-6">
         	<div class="system-image">
