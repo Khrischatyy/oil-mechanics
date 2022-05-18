@@ -42,7 +42,7 @@ class SystemController extends Controller
     }
 
     public function addProduct(Request $request){
-        if($request->parent_id){
+        if($request->parent_id > 0){
             $system = new ChildSystem();
             $system->name = $request->name;
             $system->image = $request->image;
