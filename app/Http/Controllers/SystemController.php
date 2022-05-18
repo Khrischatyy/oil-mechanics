@@ -28,7 +28,7 @@ class SystemController extends Controller
 
     public function system($id)
     {
-        $systems = ParentSystem::select('id', 'name', 'image')->get();
+        $systems = ChildSystem::select('id', 'name', 'image')->get();
 
         return view('contents.system', ['systems' => $systems]);
     }

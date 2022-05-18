@@ -1,6 +1,9 @@
 @extends('layout')
 
 @section('content')
+<div class="companies row">
+    <img src="{{ asset('images/companies/rosneft.png') }}" alt="">
+</div>
 
 <div class="systems">
     <h2>
@@ -8,15 +11,13 @@
     </h2>
     <div class="row d-flex justify-content-center">
         @foreach($systems as $system)
-            <a href="{{route('childs', ['id' => $system->id])}}">
                 <div class="card col-md-4 bg-dark m-5" style="width: 18rem;">
                     <img class="card-img-top" src="{{ asset($system->image) }}" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title text-white">{{ $system->name }}</h5>
-                        <a href="#" class="btn btn-primary">Подробнее</a>
+                        <a class="btn btn-warning" href="{{route('childs', ['id' => $system->id])}}">Подробнее</a>
                     </div>
                 </div>
-            </a>
         @endforeach
     </div>
 </div>
