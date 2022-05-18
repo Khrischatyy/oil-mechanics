@@ -10,7 +10,7 @@ class SystemController extends Controller
 {
     public function index()
     {
-        $systems = ParentSystem::select('id', 'name', 'image')->get();
+        $systems = ParentSystem::withCount('childs')->get();
 
         return view('contents.main', ['systems' => $systems]);
     }

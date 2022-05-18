@@ -11,6 +11,6 @@ class ParentSystem extends Model
     public $timestamps = false;
     
     public function childs(){
-    	return $this->hasMany(ChildSystem::class);
+    	return $this->hasMany(ChildSystem::class, 'parent_id');
     }
 }

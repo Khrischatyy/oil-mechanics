@@ -21,7 +21,7 @@
                     <img class="card-img-top" src="{{ asset($system->image) }}" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title text-white">{{ $system->name }}</h5>
-                        <a class="btn btn-warning" href="{{route('childs', ['id' => $system->id])}}">Подробнее</a>
+                        <a class="btn btn-warning" href="{{route($system->childs_count > 0 ? 'childs' : 'system', ['id' => $system->id])}}">Подробнее</a>
                     </div>
                 </div>
         @endforeach
