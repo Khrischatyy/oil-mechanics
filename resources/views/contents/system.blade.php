@@ -18,7 +18,7 @@
     </div>
     @if($system->table)
     <h3>Технические характеристики</h3>
-    <div class="row d-flex justify-content-center">
+    <div class="row d-flex justify-content-center table-responsive">
 			<table class="table">
 			  <tbody>
 			  	@foreach($system->table->table->rows as $row)
