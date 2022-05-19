@@ -16,5 +16,7 @@ html, body {
 
 .values-header {font-weight: 700;font-size: 18px;}
 
-.system-image.bg-system-image {position: relative;}
-.system-image.bg-system-image img {position: relative;bottom: 95px; right: 60px}
+@media(min-width: 500px){
+	.system-image.bg-system-image {position: relative;}
+	.system-image.bg-system-image img {position: relative;bottom: 95px; right: 60px}
+}
