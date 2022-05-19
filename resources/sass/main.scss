@@ -30,6 +30,22 @@
     }
 }
 
+@media (max-width: 1980px) {
+    .about {
+        position: relative;
+        top: 138px;
+        left: 179px;
+        z-index: 10;
+    }
+    .fon {
+        position: relative;
+        top: 0;
+        left: 348px;
+        z-index: 0;
+        margin-top: -110px;
+    }
+}
+
 @media (max-width: 991px) {
     .text-about {
         width: 60%;
