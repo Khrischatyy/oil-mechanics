@@ -19,7 +19,7 @@
     @if(isset($system->table->table))
     <h3>Технические характеристики</h3>
     <div class="row d-flex justify-content-center table-responsive">
-			<table class="table">
+			<table class="table table-bordered table-hover">
 			  <tbody>
 			  	@foreach($system->table->table->rows as $row)
 				    <tr>

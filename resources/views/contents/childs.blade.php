@@ -10,7 +10,7 @@
         <div class="childs col-md-6 mt-2">
         	@foreach($system->childs as $sys)
         		<a href="{{route('childSystem', ['id' => $system->id, 'child_id' => $sys->id])}}" style="color: black; text-decoration: none;" class="child_block card mb-3">
-        			<div class="card-body">
+        			<div class="card-body bg-dark text-white">
         			{{$sys->name}}
         			</div>
         		</a>
