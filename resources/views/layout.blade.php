@@ -10,11 +10,13 @@
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
 </head>
 <body>
-    @include('header')
-    <div class="container content">
-        @yield('content')
+    <div class="wrapper">
+        @include('header')
+        <div class="container content">
+            @yield('content')
+        </div>
     </div>
-    <div>
+    <div class="footer">
         @include('footer')
     </div>
 
