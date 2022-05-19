@@ -16,7 +16,7 @@
         	</div>
         </div>
     </div>
-    @if($system->table)
+    @if(isset($system->table->table))
     <h3>Технические характеристики</h3>
     <div class="row d-flex justify-content-center table-responsive">
 			<table class="table">
@@ -24,12 +24,30 @@
 			  	@foreach($system->table->table->rows as $row)
 				    <tr>
 				    		@foreach($row->columns as $column)
-				      		<td>{!!$column->text!!}</td>
+				      		<td>{!!$column->text ?? ''!!}</td>
 				      	@endforeach
 				    </tr>
 			    @endforeach
 			  </tbody>
 			</table>
+    </div>
+    @endif
+    @if(isset($system->table->valuesBlock))
+    @php
+    	$valuesBlock = $system->table->valuesBlock;
+    @endphp
+    <h3>{{$valuesBlock->name}}</h3>
+    <div class="d-flex justify-content-between">
+		@foreach($valuesBlock->blocks as $block)
+		    <div>
+		          <div class="values-header">
+		              {{$block->header}}      
+		          </div>
+		           <div class="values-body">
+		              {{$block->body}}      
+		          </div>
+		    </div>
+		@endforeach
     </div>
     @endif
 </div>

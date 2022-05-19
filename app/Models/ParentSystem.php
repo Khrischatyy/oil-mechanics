@@ -15,6 +15,6 @@ class ParentSystem extends Model
     }
     
     public function getTableAttribute($data){
-        return json_decode($data);
+        return json_decode(json_decode($data, true));
     }
 }
