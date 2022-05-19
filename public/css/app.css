@@ -11302,3 +11302,102 @@ textarea.form-control-lg {
   margin-bottom: 200px;
 }
 
+@media (max-width: 2500px) {
+  .about {
+    position: relative;
+    top: 115px;
+    left: 130px;
+    z-index: 10;
+  }
+
+  .fon {
+    position: relative;
+    top: 0;
+    left: 100px;
+    z-index: 0;
+    margin-top: -110px;
+  }
+}
+@media (max-width: 991px) {
+  .text-about {
+    width: 60%;
+  }
+
+  .fon {
+    margin-top: -100px;
+    left: 150px;
+  }
+
+  .about {
+    top: 75px;
+    left: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .fon {
+    margin-top: -100px;
+    left: 105px;
+  }
+
+  .about {
+    top: 30px;
+    left: -29px;
+  }
+}
+@media (max-width: 600px) {
+  .fon {
+    margin-top: -100px;
+    left: 105px;
+  }
+
+  .about {
+    top: 48px;
+    left: 16px;
+  }
+}
+@media (max-width: 500px) {
+  .text-about {
+    width: 69%;
+  }
+
+  .fon {
+    margin-top: -100px;
+    left: 105px;
+  }
+
+  .about {
+    top: 48px;
+    left: 16px;
+  }
+}
+@media (max-width: 435px) {
+  .text-about {
+    width: 76%;
+  }
+
+  .fon {
+    margin-top: -50px;
+    left: 47px;
+  }
+
+  .about {
+    top: 48px;
+    left: 16px;
+  }
+}
+@media (max-width: 400px) {
+  .text-about {
+    width: 76%;
+  }
+
+  .fon {
+    margin-top: -43px;
+    left: 38px;
+  }
+
+  .about {
+    top: 48px;
+    left: 16px;
+  }
+}
+
