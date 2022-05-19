@@ -19,14 +19,14 @@
             <img class="fon img-fluid" src="{{ asset('images/fon.png') }}" alt="">
         </div>
     </div>
-<div class="companies row justify-content-center m-4">
-    <img class="company" src="{{ asset('images/companies/rosneft.png') }}" alt="">
-    <img class="company" src="{{ asset('images/companies/gazprom.png') }}" alt="">
-    <img class="company" src="{{ asset('images/companies/shell.png') }}" alt="">
-    <img class="company" src="{{ asset('images/companies/lukoil.png') }}" alt="">
-    <img class="company" src="{{ asset('images/companies/surneftgaz.png') }}" alt="">
-    <img class="company" src="{{ asset('images/companies/schlumberger.png') }}" alt="">
-    <img class="company" src="{{ asset('images/companies/baker.png') }}" alt="">
+<div class="companies row justify-content-center m-4 img-fluid">
+    <img  src="{{ asset('images/companies.png') }}" alt="">
+{{--    <img class="company" src="{{ asset('images/companies/gazprom.png') }}" alt="">--}}
+{{--    <img class="company" src="{{ asset('images/companies/shell.png') }}" alt="">--}}
+{{--    <img class="company" src="{{ asset('images/companies/lukoil.png') }}" alt="">--}}
+{{--    <img class="company" src="{{ asset('images/companies/surneftgaz.png') }}" alt="">--}}
+{{--    <img class="company" src="{{ asset('images/companies/schlumberger.png') }}" alt="">--}}
+{{--    <img class="company" src="{{ asset('images/companies/baker.png') }}" alt="">--}}
 </div>
 
 <div id="systems" class="systems">
