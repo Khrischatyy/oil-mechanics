@@ -35,7 +35,7 @@
     </h2>
     <div class="row d-flex justify-content-center">
         @foreach($systems as $system)
-                <div class="card col-md-4 bg-dark m-5" style="width: 18rem;">
+                <div class="card col-md-4 bg-dark m-5 p-3" style="width: 18rem;">
                     <img class="card-img-top" src="{{ asset($system->image) }}" alt="Card image cap">
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title text-white">{{ $system->name }}</h5>
@@ -53,8 +53,8 @@
 
     <div class="row mt-4">
         <div class="col-md-4">
-            <img class="icons" src="{{ asset('images/target.png') }}" alt="careful">
-            <h5>Забота о клиентах</h5>
+                <img class="icons justify-content-center" src="{{ asset('images/target.png') }}" alt="careful">
+            <h5 class="mt-3">Забота о клиентах</h5>
             <p>Постоянно изучаем их потребности, предлагая новые полезные решения.
                 Мы уверены, что это — залог нашего роста и появления новых
                 долгосрочных партнерских отношений
@@ -62,7 +62,7 @@
         </div>
         <div class="col-md-4">
             <img class="icons" src="{{ asset('images/experience.png') }}" alt="experience">
-            <h5>Обмен опытом</h5>
+            <h5 class="mt-3">Обмен опытом</h5>
             <p>
                 Мы ценим обмен идеями
                 и предложениями, поэтому наша готовность найти новые решения
@@ -71,7 +71,7 @@
         </div>
         <div class="col-md-4">
             <img class="icons" src="{{ asset('images/quality.png') }}" alt="quality">
-            <h5>Качественный сервис</h5>
+            <h5 class="mt-3">Качественный сервис</h5>
             <p>
                 Своевременная доставка, соблюдение правил охраны окружающей среды
                 и правил безопасности, но нет предела совершенству. Мы не боимся трудностей и стремиться
