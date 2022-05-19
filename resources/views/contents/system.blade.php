@@ -2,16 +2,16 @@
 
 @section('content')
 <div class="systems">
-		<div class="breadcrumbs mt-5 mb-5">Продукция @if($system->parent)- {{ $system->parent->name}}@endif</div>
+		<div class="breadcrumbs mt-5 mb-5"><a style="color: black; text-decoration: none;" href="http://musictechlab.site/#systems">Продукция</a> @if($system->parent)- <a style="color: black; text-decoration: none;" href="{{route('childs', ['id' => $system->parent->id])}}">{{ $system->parent->name}}</a>@endif</div>
     <h2>
         {{$system->name}}
     </h2>
     <div class="row d-flex justify-content-center">
-        <div class="system_description col-md-6 mt-2">
+        <div style="line-height: 38px;" class="system_description col-md-6 mt-2">
         	<p>{{$system->description}}</p>
         </div>
         <div class="col-md-6">
-        	<div class="system-image">
+        	<div class="system-image bg-system-image">
         		<img class="card-img-top" src="{{ asset($system->image) }}" alt="Card image cap">
         	</div>
         </div>
@@ -36,10 +36,10 @@
     @php
     	$valuesBlock = $system->table->valuesBlock;
     @endphp
-    <h3>{{$valuesBlock->name}}</h3>
+    <h3 class="mt-4 mb-4">{{$valuesBlock->name}}</h3>
     <div class="d-flex justify-content-between">
 		@foreach($valuesBlock->blocks as $block)
-		    <div>
+		    <div class="values_block">
 		          <div class="values-header">
 		              {{$block->header}}      
 		          </div>

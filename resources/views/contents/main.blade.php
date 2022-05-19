@@ -37,7 +37,7 @@
         @foreach($systems as $system)
                 <div class="card col-md-4 bg-dark m-5" style="width: 18rem;">
                     <img class="card-img-top" src="{{ asset($system->image) }}" alt="Card image cap">
-                    <div class="card-body">
+                    <div class="card-body d-flex flex-column">
                         <h5 class="card-title text-white">{{ $system->name }}</h5>
                         <a class="btn btn-warning" href="{{route($system->childs_count > 0 ? 'childs' : 'system', ['id' => $system->id])}}">Подробнее</a>
                     </div>
