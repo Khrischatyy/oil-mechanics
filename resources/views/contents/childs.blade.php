@@ -2,10 +2,7 @@
 
 @section('content')
 <div class="systems">
-		<div class="breadcrumbs mt-5 mb-5"><a style="color: black; text-decoration: none;" href="http://musictechlab.site/#systems">Продукция</a></div>
-    <h2>
-        {{$system->name}}
-    </h2>
+		<div class="breadcrumbs mt-5 mb-5"><a style="color: black; text-decoration: none;" href="http://musictechlab.site/#systems">Продукция - {{$system->name}}</a></div>
     <div class="row d-flex justify-content-center mt-3">
         <div class="childs col-md-6 mt-2">
         	@foreach($system->childs as $sys)

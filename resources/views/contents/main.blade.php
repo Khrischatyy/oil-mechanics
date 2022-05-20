@@ -3,9 +3,12 @@
 @section('content')
     <div class="main">
         <div class="about">
-            <h1>
-                Ойл Механик
-            </h1>
+            <div class="d-flex about-oil">
+                <img class="image" src="{{ asset('images/logo_black.png') }}" alt="logo">
+                <h1>
+                    Ойл Механик
+                </h1>
+            </div>
             <div class="col-md-5 text-about">
                 Является ведущим поставщиком систем защиты погружного
                 оборудования в скважине на территории России и СНГ.
@@ -16,26 +19,20 @@
             </div>
         </div>
         <div class="">
-            <img class="fon img-fluid" src="{{ asset('images/fon.png') }}" alt="">
+            <img class="fon img-fluid" style="text-align: right;" src="{{ asset('images/fon.png') }}" alt="">
         </div>
     </div>
 <div class="companies row justify-content-center m-4 img-fluid">
     <img  src="{{ asset('images/companies.png') }}" alt="">
-{{--    <img class="company" src="{{ asset('images/companies/gazprom.png') }}" alt="">--}}
-{{--    <img class="company" src="{{ asset('images/companies/shell.png') }}" alt="">--}}
-{{--    <img class="company" src="{{ asset('images/companies/lukoil.png') }}" alt="">--}}
-{{--    <img class="company" src="{{ asset('images/companies/surneftgaz.png') }}" alt="">--}}
-{{--    <img class="company" src="{{ asset('images/companies/schlumberger.png') }}" alt="">--}}
-{{--    <img class="company" src="{{ asset('images/companies/baker.png') }}" alt="">--}}
 </div>
 
-<div id="systems" class="systems">
-    <h2>
+<div id="systems" class="systems bg-dark p-4">
+    <h2 class="text-white">
         Системы защиты погружного оборудования и кабельных линий в скважине
     </h2>
     <div class="row d-flex justify-content-center">
         @foreach($systems as $system)
-                <div class="card col-md-4 bg-dark m-5 p-3" style="width: 18rem;">
+                <div class="card col-md-4 bg-secondary m-5 p-3" style="width: 18rem; border: 2px solid white">
                     <img class="card-img-top" src="{{ asset($system->image) }}" alt="Card image cap">
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title text-white">{{ $system->name }}</h5>

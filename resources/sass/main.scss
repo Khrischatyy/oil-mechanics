@@ -1,5 +1,5 @@
 .image {
-    width: 40px;
+    width: 55px;
 }
 
 .map {
@@ -14,7 +14,28 @@
     margin-bottom: 200px;
 }
 
+p {
+    font-size: 20px;
+}
+
+.about-oil{
+    position: relative;
+    right: 10px;
+}
+
+
+.breadcrumbs {
+    font-size: 25px;
+}
+
 @media (max-width: 2500px) {
+    .active {
+        font-size: 20px;
+    }
+    .text-about {
+
+        font-size: 20px;
+    }
     .about {
         position: relative;
         top: 115px;
@@ -47,8 +68,15 @@
 }
 
 @media (max-width: 991px) {
+    .active {
+        font-size: 16px;
+    }
+    p {
+        font-size: 16px;
+    }
     .text-about {
         width: 60%;
+        font-size: 16px;
     }
     .fon {
         margin-top: -100px;
@@ -129,3 +157,5 @@
         left: 16px;
     }
 }
+
+

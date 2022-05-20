@@ -13,16 +13,14 @@
                     <a class="nav-link active" aria-current="page" href="{{ URL::route('home') }}#systems">Продукция</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ URL::route('home') }}#principles">О компании</a>
+                    <a class="nav-link active" href="{{ URL::route('home') }}#principles">О компании</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ URL::route('home') }}#contacts">Контакты</a>
+                    <a class="nav-link active" href="{{ URL::route('home') }}#contacts">Контакты</a>
                 </li>
+                <li class="nav-item"><a href="mailto:vlad@oilmechanic@bk.ru" class="nav-link px-2 active">oilmechanic@bk.ru</a></li>
+{{--                <li class="nav-item"><a href="#" class="nav-link px-2 active">oilmechanic@bk.ru</a></li>--}}
             </ul>
         </div>
-        <ul class="nav col-md-4 justify-content-end">
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">oilmechanic@bk.ru</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">+7 (495) 677-90-07</a></li>
-    </ul>
     </div>
 </nav>

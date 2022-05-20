@@ -11282,7 +11282,7 @@ textarea.form-control-lg {
   }
 }
 .image {
-  width: 40px;
+  width: 55px;
 }
 
 .map {
@@ -11297,7 +11297,28 @@ textarea.form-control-lg {
   margin-bottom: 200px;
 }
 
+p {
+  font-size: 20px;
+}
+
+.about-oil {
+  position: relative;
+  right: 10px;
+}
+
+.breadcrumbs {
+  font-size: 25px;
+}
+
 @media (max-width: 2500px) {
+  .active {
+    font-size: 20px;
+  }
+
+  .text-about {
+    font-size: 20px;
+  }
+
   .about {
     position: relative;
     top: 115px;
@@ -11330,8 +11351,17 @@ textarea.form-control-lg {
   }
 }
 @media (max-width: 991px) {
+  .active {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
   .text-about {
     width: 60%;
+    font-size: 16px;
   }
 
   .fon {
