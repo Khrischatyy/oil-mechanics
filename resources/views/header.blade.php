@@ -18,11 +18,8 @@
                 <li class="nav-item">
                     <a class="nav-link text-yellow" href="{{ URL::route('home') }}#contacts">Контакты</a>
                 </li>
+                <li class="nav-item"><a href="mailto:oilmechanic@bk.ru" class="nav-link px-2 text-yellow">oilmechanic@bk.ru</a></li>
             </ul>
         </div>
-        <ul class="nav col-md-4 justify-content-end">
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-yellow">oilmechanic@bk.ru</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-yellow">+7 (495) 677-90-07</a></li>
-    </ul>
     </div>
 </nav>

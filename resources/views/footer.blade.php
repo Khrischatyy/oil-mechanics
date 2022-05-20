@@ -7,8 +7,8 @@
     </a>
 
     <ul class="nav col-md-4 justify-content-end">
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">oilmechanic@bk.ru</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">+7 (495) 677-90-07</a></li>
+        <li class="nav-item"><a href="mailto:oilmechanic@bk.ru" class="nav-link px-2 text-white">oilmechanic@bk.ru</a></li>
+        <li class="nav-item"><a href="tel:+74956779007" class="nav-link px-2 text-white">+7 (495) 677-90-07</a></li>
     </ul>
 </footer>
 </div>
