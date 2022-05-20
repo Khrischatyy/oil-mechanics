@@ -96,4 +96,23 @@
         <img class="map img-fluid" src="{{ asset('images/map.png') }}" alt="map">
     </div>
 </div>
+
+<div class="row mt-5">
+    <h2 class="mt-4">
+            Контакты
+    </h2>
+<div class="card">
+  <div class="card-body">
+      <span class="fa fa-mobile fa-2x text-success float-right pulse" title="online now"></span>
+        <span>Телефон:</span>
+        <a href="tel:+74956779007" class="text-muted small">+7 (495) 677-90-07</a>
+        <br>
+        <span>Телефон:</span>
+        <a href="tel:+74956779008" class="text-muted small">+7 (495) 677-90-08</a>
+        <br>
+        <span>Email:</span>
+        <a href="mailto:oilmechanic@bk.ru" class="text-muted small text-truncate">oilmechanic@bk.ru</span>
+  </div>
+</div>    
+</div>
 @endsection
