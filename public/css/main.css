@@ -20,3 +20,19 @@ html, body {
 	.system-image.bg-system-image {position: relative;}
 	.system-image.bg-system-image img {position: relative;bottom: 95px; right: 60px}
 }
+
+.bg-dark {
+    background-color: #4d4d4d!important;
+}
+
+.bg-green{
+  background: rgba(11, 69, 0, 0.95);
+}
+
+.text-yellow{
+  color: rgba(255, 192, 1, 1)!important;
+}
+
+a.active{
+  font-size: unset!important;
+}

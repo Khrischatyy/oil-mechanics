@@ -26,7 +26,7 @@
     <img  src="{{ asset('images/companies.png') }}" alt="">
 </div>
 
-<div id="systems" class="systems bg-dark p-4">
+<div id="systems" class="systems bg-green p-4">
     <h2 class="text-white">
         Системы защиты погружного оборудования и кабельных линий в скважине
     </h2>
