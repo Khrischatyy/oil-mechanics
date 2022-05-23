@@ -32,11 +32,11 @@
     </h2>
     <div class="row d-flex justify-content-center">
         @foreach($systems as $system)
-                <div class="card col-md-4 bg-secondary m-5 p-3" style="width: 18rem; border: 2px solid white">
+                <div class="card col-md-4 bg-warning m-5 p-3" style="width: 18rem; border: none">
                     <img class="card-img-top" src="{{ asset($system->image) }}" alt="Card image cap">
                     <div class="card-body d-flex flex-column">
-                        <h5 class="card-title text-white">{{ $system->name }}</h5>
-                        <a class="btn btn-warning" href="{{route($system->childs_count > 0 ? 'childs' : 'system', ['id' => $system->id])}}">Перейти</a>
+                        <h5 class="card-title text-black">{{ $system->name }}</h5>
+                        <a class="btn bg-white" href="{{route($system->childs_count > 0 ? 'childs' : 'system', ['id' => $system->id])}}">Перейти</a>
                     </div>
                 </div>
         @endforeach
@@ -113,6 +113,6 @@
         <span>Email:</span>
         <a href="mailto:oilmechanic@bk.ru" class="text-muted small text-truncate">oilmechanic@bk.ru</span>
   </div>
-</div>    
+</div>
 </div>
 @endsection
