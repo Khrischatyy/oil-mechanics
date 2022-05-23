@@ -41,10 +41,10 @@
 		@foreach($valuesBlock->blocks as $block)
 		    <div class="values_block">
 		          <div class="values-header">
-		              {{$block->header}}      
+		              {{$block->header}}
 		          </div>
 		           <div class="values-body">
-		              {{$block->body}}      
+		              {{$block->body}}
 		          </div>
 		    </div>
 		@endforeach

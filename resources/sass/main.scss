@@ -1,6 +1,14 @@
 .image {
     width: 55px;
 }
+.h1-about {
+    position: relative;
+    left: 250px;
+    bottom: 50px;
+}
+.image-logo {
+    width: 100px;
+}
 
 .map {
     width: 700px;
@@ -34,7 +42,7 @@ p {
     }
     .text-about {
 
-        font-size: 20px;
+        font-size: 23px;
     }
     .about {
         position: relative;
@@ -61,7 +69,7 @@ p {
     .fon {
         position: relative;
         top: 0;
-        left: 348px;
+        left: 102px;
         z-index: 0;
         margin-top: -110px;
     }

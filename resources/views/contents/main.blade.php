@@ -4,10 +4,12 @@
     <div class="main">
         <div class="about">
             <div class="d-flex about-oil">
-                <img class="image" src="{{ asset('images/logo_black.png') }}" alt="logo">
-                <h1>
-                    Ойл Механик
-                </h1>
+                <div class="d-flex h1-about">
+                    <img class="image-logo" src="{{ asset('images/logo_black.png') }}" alt="logo">
+                    <h1 style="font-size: 4.5rem">
+                        Ойл Механик
+                    </h1>
+                </div>
             </div>
             <div class="col-md-5 text-about">
                 Является ведущим поставщиком систем защиты погружного
@@ -26,24 +28,29 @@
     <img  src="{{ asset('images/companies.png') }}" alt="">
 </div>
 
-<div id="systems" class="systems bg-green p-4">
+<div style="width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;" id="systems" class="systems bg-green p-4">
     <h2 class="text-white">
         Системы защиты погружного оборудования и кабельных линий в скважине
     </h2>
     <div class="row d-flex justify-content-center">
         @foreach($systems as $system)
-                <div class="card col-md-4 bg-warning m-5 p-3" style="width: 18rem; border: none">
-                    <img class="card-img-top" src="{{ asset($system->image) }}" alt="Card image cap">
+                <div class="card col-md-4 bg-light m-5 p-3" style="width: 20rem; border: none">
+                    <img style="width: 300px" class="card-img-top" src="{{ asset($system->image) }}" alt="Card image cap">
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title text-black">{{ $system->name }}</h5>
-                        <a class="btn bg-white" href="{{route($system->childs_count > 0 ? 'childs' : 'system', ['id' => $system->id])}}">Перейти</a>
+                        <a style="border: 1px solid black" class="btn bg-white" href="{{route($system->childs_count > 0 ? 'childs' : 'system', ['id' => $system->id])}}">Перейти</a>
                     </div>
                 </div>
         @endforeach
     </div>
 </div>
 
-<div id="principles" class="principles">
+<div id="principles" class="principles mt-3">
    <h2>
        Принципы нашей работы
    </h2>
@@ -78,7 +85,13 @@
     </div>
 </div>
 
-<div class="row d-flex">
+<div class="row d-flex mt-3" style="background: rgb(11, 69, 0, 0.95); width: 100vw;
+     position: relative;
+     left: 50%;
+     right: 50%;
+     margin-left: -50vw;
+     color:white;
+     margin-right: -50vw;">
     <div class="col-md-5">
         <h2 class="mt-4">
             География покупателей
