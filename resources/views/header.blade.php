@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-green" aria-label="Eighth navbar example">
-    <div class="container">
+    <div class="container " style="max-width: 800px">
         <a class="navbar-brand" href="{{ route('home') }}">
             <img class="image" src="{{ asset('images/logo.png') }}" alt="logo">
         </a>
@@ -19,8 +19,9 @@
                     <a class="nav-link text-white" href="{{ URL::route('home') }}#contacts">Контакты</a>
                 </li>
             </ul>
-            <ul>
-                <li class="nav-item text-right"><a href="mailto:oilmechanic@bk.ru" class="nav-link px-2 text-white">oilmechanic@bk.ru</a></li>
+            <ul style="margin-bottom: 0">
+                <li style="list-style: none; margin-bottom: 0" class="nav-item text-right"><a href="mailto:oilmechanic@bk.ru" class="nav-link px-2 text-white">oilmechanic@bk.ru</a></li>
+                <li style="list-style: none; margin-bottom: 0" class="nav-item text-right"><a href="mailto:oilmechanic@bk.ru" style="position: relative; left: -4px" class="nav-link px-2 text-white">+7 (495) 677-90-07</a></li>
             </ul>
         </div>
     </div>

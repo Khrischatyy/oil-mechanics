@@ -11288,11 +11288,14 @@ textarea.form-control-lg {
 .h1-about {
   position: relative;
   left: 250px;
-  bottom: 50px;
+  bottom: 162px;
 }
 
 .image-logo {
-  width: 100px;
+  width: 200px;
+  position: relative;
+  top: 40px;
+  left: 146px;
 }
 
 .map {
@@ -11326,7 +11329,7 @@ p {
   }
 
   .text-about {
-    font-size: 23px;
+    font-size: 26px;
   }
 
   .about {
@@ -11354,8 +11357,8 @@ p {
 
   .fon {
     position: relative;
-    top: 0;
-    left: 102px;
+    top: 40px;
+    left: 75px;
     z-index: 0;
     margin-top: -110px;
   }
@@ -11450,5 +11453,21 @@ p {
     top: 48px;
     left: 16px;
   }
+
+  .h1-about {
+    position: relative;
+    left: 20px;
+    bottom: 50px;
+  }
+
+  .image-logo {
+    width: 200px;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+html, body {
+  font-weight: 200 !important;
 }
 

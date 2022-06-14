@@ -4,25 +4,45 @@
     <div class="main">
         <div class="about">
             <div class="d-flex about-oil">
-                <div class="d-flex h1-about">
+                <div class="h1-about">
                     <img class="image-logo" src="{{ asset('images/logo_black.png') }}" alt="logo">
                     <h1 style="font-size: 4.5rem">
-                        Ойл Механик
+                        OIL MECHANIC
                     </h1>
                 </div>
             </div>
-            <div class="col-md-5 text-about">
-                Является ведущим поставщиком систем защиты погружного
-                оборудования в скважине на территории России и СНГ.
-                Основная задача нашего оборудования защищать кабельные
-                линии и погружные установки от механических повреждений в
-                скважине, а также в процессе СПО и эксплуатации. Первый патент
-                на протектор кабеля был получен в 2000 году.
+            <div class="col-md-9 text-about" style="position: relative; top: -125px">
+                «OIL MECHANIC» ведущий поставщик систем защиты погружного оборудования в скважине
+                на территории России и СНГ.
+                Основная задача нашего оборудования защищать кабельные линии и погружные установки от
+                механических <br> повреждений в скважине, а также в процессе СПО и эксплуатации.
             </div>
         </div>
         <div class="">
             <img class="fon img-fluid" style="text-align: right;" src="{{ asset('images/fon.png') }}" alt="">
         </div>
+{{--        <div class="col-md-9 text-about" style="text-align: right; position: relative; top: -125px">--}}
+{{--            «OIL MECHANIC» ведущий поставщик систем защиты погружного оборудования в скважине--}}
+{{--            на территории России и СНГ.--}}
+{{--            Основная задача нашего оборудования защищать кабельные <br> линии и погружные установки от--}}
+{{--            механических повреждений в скважине, а также <br> в процессе СПО и эксплуатации.--}}
+{{--        </div>--}}
+
+
+        <div class="col-md-10" style="font-size: 26px; text-align: right; position: relative; top: -12px; right: -214px;">
+            <div>
+                <div>Компания разработала широкий ассортимент изделий. Таким образом,<br></div>
+                <div class="" style="position: relative; left: -90px">
+                    «OIL MECHANIC» с большой вероятностью обеспечивает защиту кабеля и
+                </div>
+
+                <div class="" style="position: relative; left: -270px">
+                    беспрепятственный спуск и подъем оборудования из скважины.<br>
+                </div>
+                <div class="" style="position: relative; left: -370px">
+                    Первый патент на протектор кабеля был получен в 2000 году.
+                </div>
+            </div>
     </div>
 <div class="companies row justify-content-center m-4 img-fluid">
     <img  src="{{ asset('images/companies.png') }}" alt="">
@@ -34,10 +54,10 @@
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;" id="systems" class="systems bg-green p-4">
-    <h2 class="text-white">
+    <div class="text-white d-flex justify-content-center " style="margin-bottom: 30px; font-size: 45px; font-weight: 250" >
         Системы защиты погружного оборудования и кабельных линий в скважине
-    </h2>
-    <div class="row d-flex justify-content-center">
+    </div>
+    <div class="row d-flex justify-content-center" style="border-top: 6px solid white;">
         @foreach($systems as $system)
                 <div class="card col-md-4 bg-light m-5 p-3" style="width: 20rem; border: none">
                     <img style="width: 300px" class="card-img-top" src="{{ asset($system->image) }}" alt="Card image cap">
