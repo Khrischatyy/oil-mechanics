@@ -1,3 +1,4 @@
+@import url(http://fonts.cdnfonts.com/css/gilroy-bold);
 @charset "UTF-8";
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
@@ -11307,7 +11308,7 @@ textarea.form-control-lg {
 }
 
 .content {
-  margin-bottom: 200px;
+  margin-bottom: 30px;
 }
 
 p {
@@ -11469,5 +11470,14 @@ p {
 }
 html, body {
   font-weight: 200 !important;
+  font-family: "Gilroy-Light", sans-serif;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: "Gilroy-Bold", sans-serif;
+}
+
+.principe-item {
+  font-size: 26px;
 }
 
