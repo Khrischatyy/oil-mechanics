@@ -21,25 +21,18 @@
         <div class="">
             <img class="fon img-fluid" style="text-align: right;" src="{{ asset('images/fon.png') }}" alt="">
         </div>
-{{--        <div class="col-md-9 text-about" style="text-align: right; position: relative; top: -125px">--}}
-{{--            «OIL MECHANIC» ведущий поставщик систем защиты погружного оборудования в скважине--}}
-{{--            на территории России и СНГ.--}}
-{{--            Основная задача нашего оборудования защищать кабельные <br> линии и погружные установки от--}}
-{{--            механических повреждений в скважине, а также <br> в процессе СПО и эксплуатации.--}}
-{{--        </div>--}}
 
-
-        <div class="col-md-10" style="font-size: 26px; text-align: right; position: relative; top: -12px; right: -214px;">
+        <div class="col-md-10 about-company" style="">
             <div>
                 <div>Компания разработала широкий ассортимент изделий. Таким образом,<br></div>
-                <div class="" style="position: relative; left: -90px">
+                <div class="position-relative-90">
                     «OIL MECHANIC» с большой вероятностью обеспечивает защиту кабеля и
                 </div>
 
-                <div class="" style="position: relative; left: -270px">
+                <div class="position-relative-270">
                     беспрепятственный спуск и подъем оборудования из скважины.<br>
                 </div>
-                <div class="" style="position: relative; left: -370px">
+                <div class="position-relative-370">
                     Первый патент на протектор кабеля был получен в 2000 году.
                 </div>
             </div>
@@ -128,7 +121,7 @@
                     </p>
                 </div>
                 <div class="col-md-7">
-                    <img class="map" style="width: 800px" src="{{ asset('images/map.png') }}" alt="map">
+                    <img class="map img-fluid"  src="{{ asset('images/map.png') }}" alt="map">
                 </div>
 
             </div>
@@ -156,10 +149,11 @@
             <a href="mailto:oilmechanic@bk.ru" class="text-muted small text-truncate">oilmechanic@bk.ru</a>
             <br>
             <span>Адрес:</span>
-
-            <a href="mailto:oilmechanic@bk.ru" class="text-muted small text-truncate">
-                105120, г.  Москва, Нижняя Сыромятническая  улица, дом 11.
-            </a>
+            <div class="">
+                <a href="mailto:oilmechanic@bk.ru" class="text-muted small text-truncate">
+                    105120, г.  Москва, Нижняя Сыромятническая  улица, дом 11.
+                </a>
+            </div>
         </div>
 
         <div class="col-6 card-body" style="font-size: 20px">
@@ -173,10 +167,11 @@
             <a href="mailto:om.caspian@mbx.kz" class="text-muted small text-truncate">om.caspian@mbx.kz</a>
             <br>
             <span>Адрес:</span>
-
-            <a href="mailto:oilmechanic@bk.ru" class="text-muted small text-truncate">
-                130000, г. Актау БЦ «Forum» 14мкр. строение 58/1
-            </a>
+            <div class="">
+                <a href="mailto:oilmechanic@bk.ru" class="text-muted small text-truncate">
+                    130000, г. Актау БЦ «Forum» 14мкр. строение 58/1
+                </a>
+            </div>
         </div>
     </div>
 </div>

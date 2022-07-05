@@ -11292,6 +11292,29 @@ textarea.form-control-lg {
   bottom: 162px;
 }
 
+.position-relative-90 {
+  position: relative;
+  left: -90px;
+}
+
+.position-relative-270 {
+  position: relative;
+  left: -270px;
+}
+
+.about-company {
+  font-size: 26px;
+  text-align: right;
+  position: relative;
+  top: -12px;
+  right: -214px;
+}
+
+.position-relative-370 {
+  position: relative;
+  left: -370px;
+}
+
 .image-logo {
   width: 200px;
   position: relative;
@@ -11426,13 +11449,49 @@ p {
   }
 }
 @media (max-width: 435px) {
+  .text-truncate {
+    white-space: normal;
+  }
+
+  .image-logo {
+    width: 135px;
+    top: 120px;
+  }
+
+  .about-company {
+    right: 0;
+  }
+
+  .position-relative-90 {
+    position: relative;
+    left: 0;
+  }
+
+  .position-relative-270 {
+    position: relative;
+    left: 0;
+  }
+
+  .position-relative-370 {
+    position: relative;
+    left: 0;
+  }
+
+  .h1-about {
+    position: relative;
+    left: 6px;
+    bottom: 162px;
+  }
+
   .text-about {
+    font-size: 20px;
     width: 76%;
   }
 
   .fon {
     margin-top: -50px;
-    left: 47px;
+    left: 7px;
+    top: -15px;
   }
 
   .about {
