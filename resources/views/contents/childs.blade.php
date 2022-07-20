@@ -18,7 +18,7 @@
         </div>
         <div class="col-md-8">
         	<div class="system-image  bg-system-image">
-        		<img style="position: relative; top: -194px; width: 900px;" class="card-img-top" src="{{ asset($system->image) }}" alt="Card image cap">
+        		<img style="position: relative; top: -100px; width: 900px;" class="card-img-top" src="{{ asset($system->image) }}" alt="Card image cap">
         	</div>
         </div>
     </div>

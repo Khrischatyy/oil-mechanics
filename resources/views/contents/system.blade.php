@@ -18,7 +18,7 @@
     </div>
     @if(isset($system->table->table))
         <div class="" style="position: relative; top: -60px;">
-            <h3>Технические характеристики</h3>
+    <h3 style="margin-top: 6%;">Технические характеристики</h3>
             <div class="row d-flex justify-content-center table-responsive">
                 <table class="table table-bordered table-hover mb-5" style="font-size: 20px">
                     <tbody>
